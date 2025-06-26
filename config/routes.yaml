@@ -1,0 +1,11 @@
+# Импорт всех контроллеров из папки src/Controller (атрибуты)
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+# Отдельно прописываем маршрут для JWT
+api_login_check:
+    path: /api/login_check
+    methods: POST
